@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #1a1f4c;
+    --text: #202046;
+    --dark: #4a0586;
+    --grey: #595757;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text);
+}
+
+a {
+    transition: all 1s ease;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* NavBar */
+
+.navbar .nav-item {
+    font-size: 1rem;
+}
+
+.navbar {
+    background-color: var(--primary);
+}
