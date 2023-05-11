@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
+    white-space: nowrap;
 }
 
 :root {
     --primary: #1a1f4c;
     --text: #202046;
-    --dark: #4a0586;
+    --brand: #4a0586;
     --grey: #595757;
 }
 
@@ -27,18 +28,55 @@ h1, h2, h3, h4, h5, h6 {
 a {
     transition: all 1s ease;
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: var(--brand);
 }
 
 img {
     width: 100%;
 }
 
-/* NavBar */
-
-.navbar .nav-item {
-    font-size: 1rem;
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
+  
+
+/* NavBar */
 
 .navbar {
     background-color: var(--primary);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: white;
+    margin-right: 10px; 
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active{
+    color: var(--brand);
+}
+
+/* Button */
+
+.btn {
+    padding: 8px 28px;
+    margin: 0px 16px 0px 0px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 1s ease;
+}
+
+.btn-brand {
+    background-color: white;
+    border-color: 1px solid #895DFB;
+    color: black;
 }
