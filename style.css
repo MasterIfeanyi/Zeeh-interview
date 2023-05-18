@@ -87,6 +87,7 @@ section {
 }
 
 /* Hero */
+
 .banner-image {
     background-color: var(--primary);
     position: relative;
@@ -146,6 +147,17 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
+.phone-img {
+    position: relative;
+    z-index: 2;
+}
+
+.phone-top{
+    background-image: url("./images/Vectary-texture.png");
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
 
 
 /* Media Queries */
