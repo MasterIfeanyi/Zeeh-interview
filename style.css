@@ -115,6 +115,14 @@ section {
     transform: rotateZ(90deg)
 }
 
+.vector-overlay {
+    background-image: url("./images/Vector.png");
+    right: 0%;
+    bottom: 100%;
+    position: absolute;
+    transform: rotateZ(90deg)
+}
+
 .overlay {
     background-image: url("./images/image.png");
     position: absolute;
@@ -129,4 +137,24 @@ section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.text-design { 
+    /* background: -webkit-linear-gradient(#42278A, #56D8F6); */
+    background: -webkit-linear-gradient(90deg, #A2E3FA 0%, #BFBAFE 18.47%, #D7CFC9 38.94%, #BBD0DC 57.46%, #B7E5D3 72.64%, #83DBF9 86.56%, #72E0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 760px) {
+    .banner-image:before {
+        display: none;  
+    }
+    .banner-image:after {
+        display: none;  
+    }
 }
