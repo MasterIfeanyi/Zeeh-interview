@@ -149,18 +149,76 @@ section {
 
 .phone-img {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
-.phone-top{
-    background-image: url("./images/Vectary-texture.png");
+.phone-img::after {
+    content: url("./images/Vectary-texture.png");
+    top: 0%;
+    right: 0%;
     position: absolute;
-    top: -10%;
+    display: inline-block;
+    /* width: 800px;
+    height: 700px; */
+}
+
+.phone {
+    width: 690px;
+    height: 700px;
+    position: absolute;
+    top: 30%;
+    right: -20%;
+}
+
+
+
+
+/* .phone-img:before{
+    background: url("./images/Vectary-texture.png");
+    position: absolute;
+    top: -5%;
     right: 0;
 }
 
+.phone-img:after{
+    background: url("./images/Vectary-texture.png");
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+}
+
+.phone-top{
+    background: url("./images/Vectary-texture.png");
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 800px;
+    height: 700px;
+}
+
+.phone-bottom{
+    background: url("./images/Vectary-texture.png");
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 800px;
+    height: 700px;
+} */
+
+
+
+
 
 /* Media Queries */
+
+@media screen and (max-width: 992px) {
+    .phone {
+        width: 600px;
+        height: 700px;
+        top: 10%;
+        right: 0%;
+    }
+}
 
 @media screen and (max-width: 760px) {
     .banner-image:before {
@@ -168,5 +226,12 @@ section {
     }
     .banner-image:after {
         display: none;  
+    }
+
+    .phone {
+        width: 500px;
+        height: 700px;
+        top: 60%;
+        right: 0%;
     }
 }
