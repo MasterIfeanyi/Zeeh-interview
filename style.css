@@ -233,12 +233,27 @@ section {
 }
 
 
+.fairmoney-parent {
+    position: relative;
+    z-index: 2;
+}
+
 .fairmoney{
     width: 500px;
     max-width: calc(100% - 10px);
     background-color: #6936F5;
 }
 
+.background1{
+    position: absolute;
+    width: 460px;
+    max-width: calc(98% - 10px);
+    background-color: #4a0586;
+    height: 40px;
+    z-index: -1;
+    bottom: -10%;
+    left: 29%;
+}
 
 .circle {
     background-color: white;
@@ -255,7 +270,37 @@ section {
 }
 
 
+
+
 /* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .background1{
+        width: 400px;
+        max-width: 100%;
+        left: 30%;
+    }
+    .play-store {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .background1{
+        display: none;
+    }
+    .play-store {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    .background1{
+        width: 400px;
+        max-width: 100%;
+        left: 20%;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .phone {
@@ -266,6 +311,14 @@ section {
     }
     .hero-img{
         display: none;
+    }
+    .background1{
+        width: 400px;
+        max-width: 100%;
+        left: 20%;
+    }
+    .play-store {
+        width: 120px;
     }
 }
 
@@ -290,5 +343,10 @@ section {
     }
     .hero-img{
         display: none;
+    }
+    .background1{
+        width: 420px;
+        max-width: 100%;
+        left: 10%;
     }
 }
