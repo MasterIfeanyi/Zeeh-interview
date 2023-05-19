@@ -23,7 +23,9 @@ body {
     --text: #202046;
     --dark: #4a0586;
     --brand: #6936F5;
+    --gray: #F8F9FD;
     --grey: #595757;
+
 }
 
 ul {
@@ -74,6 +76,10 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }  
+
+.grey-bg {
+    background-color: var(--gray);
+}
 
 /* NavBar */
 
@@ -269,6 +275,10 @@ section {
     align-items: center; */
 }
 
+.section-title {
+    text-align: center;
+    margin: 0 auto 40px auto;
+}
 
 
 
