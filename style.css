@@ -302,9 +302,10 @@ section {
 
 /* Review */
 .review {
-    padding: 15px 40px 15px 40px;
+    padding: 40px 18px;
     border-radius: 12px;
     background-color: #F0F0F0;
+    white-space: wrap;
 }
 
 /* Media Queries */
