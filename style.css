@@ -1,10 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+/* @import url(https://fonts.googleapis.com/css?family=Nunito); */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  Nunito, sans-serif;
+    /* font-family:  Nunito, sans-serif; */
+    font-family: sans-serif;
 }
 
 html {
@@ -138,10 +139,9 @@ section {
 /* Hero */
 
 .banner-image {
-    background-color: var(--primary);
     position: relative;
     z-index: 2;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* DRY */
@@ -280,11 +280,36 @@ section {
     margin: 0 auto 40px auto;
 }
 
+/* Our Offers */
 
+.rafiki {
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 12px;
+    border-radius: 12px;
+}
+
+/* Grid */
+
+.five-col-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* Review */
+.review {
+    padding: 15px 40px 15px 40px;
+    border-radius: 12px;
+    background-color: #F0F0F0;
+}
 
 /* Media Queries */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1115px) {
     .background1{
         width: 400px;
         max-width: 100%;
@@ -310,6 +335,9 @@ section {
         max-width: 100%;
         left: 20%;
     }
+    .five-col-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -329,6 +357,9 @@ section {
     }
     .play-store {
         width: 120px;
+    }
+    .five-col-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -358,5 +389,8 @@ section {
         width: 420px;
         max-width: 100%;
         left: 10%;
+    }
+    .five-col-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

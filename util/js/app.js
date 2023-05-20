@@ -32,7 +32,7 @@ $('#why-carousel').owlCarousel({
     loop:true,
     margin:28,
     dots: false,
-    nav: false,
+    nav: true,
     smartSpeed: 1000,
     autoplay:true,
     autoplayTimeout:5000,
@@ -42,10 +42,10 @@ $('#why-carousel').owlCarousel({
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
-            items:6
+            items:1
         }
     }
 })
