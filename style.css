@@ -293,6 +293,14 @@ section {
     border-radius: 12px;
 }
 
+.section-title .ruler {
+    background: url("./images/Group 80.png");
+    margin: 0px auto;
+    height: 22px;
+    width: 418px;
+    max-width: 100%;
+}
+
 /* Grid */
 
 .five-col-grid {
@@ -314,6 +322,44 @@ section {
 .credit-score {
     position: relative;
     z-index: 2;
+}
+
+.stats p {
+    color: #101828;
+}
+
+/* footer */
+footer {
+    padding: 4rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul a {
+    color: #6936F5;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+}
+
+
+.social-links a:hover{
+    background-color: black;
+    color: white;
 }
 
 /* Media Queries */
