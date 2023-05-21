@@ -335,6 +335,13 @@ footer {
 
 footer ul {
     list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 8px 0px;
+    list-style: none;
 }
 
 footer ul a {
